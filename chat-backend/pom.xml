@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.echoroom</groupId>
-	<artifactId>chat-service</artifactId>
+	<artifactId>chat-backend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Echo Room</name>
 	<description>Real-time chat app with rooms using Spring Boot, MongoDB, WebSocket</description>
