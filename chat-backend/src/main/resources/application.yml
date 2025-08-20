@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: Echo Room
+
+  data:
+    mongodb:
+      uri:
