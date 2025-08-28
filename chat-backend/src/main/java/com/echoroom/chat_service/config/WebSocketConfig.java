@@ -12,8 +12,8 @@ import org.springframework.web.socket.config.annotation.WebSocketMessageBrokerCo
 @EnableWebSocketMessageBroker
 public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
 
-    @Value("${frontend.url}")
-    private String frontendUrl;
+    @Value("${frontend.urls}")
+    private String[] frontendUrls;
 
     @Override
     public void configureMessageBroker(MessageBrokerRegistry config) {
@@ -30,7 +30,7 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
     public void registerStompEndpoints(StompEndpointRegistry registry) {
         // connection is stabalished at /chat end point
         registry.addEndpoint("/chat")
-                .setAllowedOrigins(frontendUrl)
+                .setAllowedOrigins(frontendUrls)
                 .withSockJS();
     }
 }
