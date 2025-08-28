@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestBody;
 
 @Controller
-@CrossOrigin(origins = "${frontend.url}")
 public class ChatController {
 
     @Autowired

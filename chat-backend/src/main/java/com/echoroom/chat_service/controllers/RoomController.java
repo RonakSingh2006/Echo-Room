@@ -10,7 +10,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/rooms")
-@CrossOrigin(origins = "${frontend.url}")
 public class RoomController {
 
     @Autowired
