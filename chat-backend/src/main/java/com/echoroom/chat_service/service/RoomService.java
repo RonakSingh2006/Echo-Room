@@ -50,7 +50,6 @@ public class RoomService {
     }
 
     // Get Message of Room
-
     public ResponseEntity<List<Message>> getMessages(String roomId){
         Room room = roomRepository.findByRoomId(roomId);
 
@@ -62,5 +61,4 @@ public class RoomService {
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         }
     }
-
 }
