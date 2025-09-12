@@ -33,7 +33,8 @@ function Chat(){
       try{
         const response = await getMessage(roomId);
         
-        setMessage(response);
+        // setMessage(response);
+        setMessage(Array.isArray(response) ? response : []);
       }
       catch(error){
         toast.error(error);
